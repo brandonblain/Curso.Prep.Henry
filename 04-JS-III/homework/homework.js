@@ -270,17 +270,16 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  numeroitera=0;
+  numeroiteracion=0;
   arraynumeros=[];
   do {
-    if (numeroitera==5) {
-      continue; 
+    if (numeroiteracion===5) {
+      continue;
     }
-      arraynumeros.push(numero);
-      numeroitera++;
-      numero=numero+2;
-    
-  } while (numeroitera<10);
+    numero=numero+2;
+    arraynumeros.push(numero);
+    numeroiteracion++;
+  } while (numeroiteracion<10);
   return arraynumeros;
 }
 
