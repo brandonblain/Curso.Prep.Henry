@@ -171,7 +171,6 @@ function esPrimo(numero) {
       element++;
     }
   }
-  console.log(element);
   return (element==1)?true:false;
   
 }
