@@ -249,37 +249,44 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  mensaje="";
+  paro=""
   numeroiteracion=0;
   arraynumeros=[];
   do {
     numero=numero+2;
     arraynumeros.push(numero);
     numeroiteracion++;
-    if (numero==10) {
+    if (numeroiteracion==numero) {
+      mensaje= "Se interrumpió la ejecución";
+      paro=true;
       break;
     }
   } while (numeroiteracion<10);
-  return arraynumeros;
+  if (paro) {
+    return mensaje
+  }else{
+    return arraynumeros;
+  }
 }
 
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-  //Guardar cada nuevo valor en un array.    
+  //Guardar cada nuevo valor en un array.
   //Devolver el array
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  numeroiteracion=0;
   arraynumeros=[];
-  do {
-    if (numeroiteracion===5) {
+  for (let index = 0; index < 10; index++) {
+    if (index==5) {
       continue;
+    }else{
+      numero=numero+2;
+      arraynumeros.push(numero);
     }
-    numero=numero+2;
-    arraynumeros.push(numero);
-    numeroiteracion++;
-  } while (numeroiteracion<10);
+  }
   return arraynumeros;
 }
 
