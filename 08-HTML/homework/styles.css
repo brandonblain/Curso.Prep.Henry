@@ -1,0 +1,26 @@
+body{
+    background: url ('https://images5.alphacoders.com/324/thumb-1920-324136.jpg');
+}
+#divClass .h1 {
+    color: deepskyblue;
+}
+.img {
+    width: 400px;
+}
+#thirdDiv{
+    width:500px;
+    height:600px;
+    background-color: deeppink;
+    padding: 50px;
+    border: 2px solid black;
+    text-align: center;
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+    text-align: center;
+}
+#container{
+    display:grid;
+    grid-template-columns: auto;
+}
